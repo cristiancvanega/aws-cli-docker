@@ -36,3 +36,5 @@ RUN apt-get install -y python-dev && \
 	curl -O https://bootstrap.pypa.io/get-pip.py && \
 	python get-pip.py --user && \
 	.local/bin/pip  install awscli --upgrade --user
+
+RUN mv .local/bin/aws /usr/local/bin/
